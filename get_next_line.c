@@ -6,7 +6,7 @@
 /*   By: aldiaz-c <aldiaz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/01 14:06:37 by aldiaz-c          #+#    #+#             */
-/*   Updated: 2022/10/10 14:08:19 by aldiaz-c         ###   ########.fr       */
+/*   Updated: 2022/10/10 14:34:32 by aldiaz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,7 +95,7 @@ char	*get_next_line(int fd)
 	static char	*stash;
 	char		*line;
 
-	if (fd < 0 || BUFFER_SIZE <= 0)
+	if (fd < 0 || BUFFER_SIZE <= 0 || fd > OPEN_MAX)
 		return (NULL);
 	stash = ft_read_to_stash(fd, stash);
 	if (!stash)
@@ -138,5 +138,6 @@ char	*get_next_line(int fd)
 // 	close(fd1);
 // 	close(fd2);
 // 	close(fd3);
+// 	system("leaks a.out");
 // 	return (0);
 // }

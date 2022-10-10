@@ -6,7 +6,7 @@
 /*   By: aldiaz-c <aldiaz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/01 14:10:35 by aldiaz-c          #+#    #+#             */
-/*   Updated: 2022/10/07 14:44:20 by aldiaz-c         ###   ########.fr       */
+/*   Updated: 2022/10/10 14:40:02 by aldiaz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <limits.h>
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 1
