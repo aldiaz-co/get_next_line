@@ -1,0 +1,5 @@
+ligne 1 texte 1
+ligne 2 texte 1
+ligne 3 texte 1
+ligne 4 texte 1, prochaine ligne vide
+
